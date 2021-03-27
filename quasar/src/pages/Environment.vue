@@ -4,7 +4,6 @@
     <q-table
       compact
       :hide-bottom="true"
-      :dark="$store.getters.isDark"
       dense
       row-key="name"
       :data="env"

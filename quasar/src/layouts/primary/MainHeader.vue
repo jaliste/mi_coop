@@ -1,11 +1,5 @@
 <template>
-  <q-header
-    :style="
-      $store.getters.isDark
-        ? 'background:linear-gradient(45deg, purple, teal)'
-        : 'background:linear-gradient(135deg, red, orange)'
-    "
-  >
+  <q-header>
     <q-toolbar>
       <q-btn
         id="toggleLeftDrawer"
@@ -18,9 +12,8 @@
         <q-icon name="menu" />
       </q-btn>
 
-      <q-toolbar-title>Verbose Equals True</q-toolbar-title>
+      <q-toolbar-title>Huellas Verdes</q-toolbar-title>
 
-      <dark-mode></dark-mode>
       <span class="lang">
         <emoji
           :native="false"
@@ -52,7 +45,14 @@
         no-caps
         @click="logout"
       /> -->
-
+      <q-btn
+        id="apply"
+        :ripple="false"
+        color="white"
+        text-color="primary"
+        label="Become a member"
+        no-caps
+      />
       <q-btn
         id="login"
         :ripple="false"
@@ -83,20 +83,20 @@ export default {
     return {
       showing: false,
       lang: {
-        label: "US English",
-        value: "en-us",
-        emoji: ":flag-us:",
+        label: "Castellano",
+        value: "es-cl",
+        emoji: ":flag-cl:",
       },
       langs: [
         {
-          label: "US English",
+          label: "English",
           value: "en-us",
           emoji: ":flag-us:",
         },
         {
-          label: "Chinese",
-          value: "cn-cn",
-          emoji: ":flag-cn:",
+          label: "Castellano",
+          value: "es-cl",
+          emoji: ":flag-cl:",
         },
       ],
     };

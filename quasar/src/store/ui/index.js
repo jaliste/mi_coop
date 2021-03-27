@@ -1,6 +1,6 @@
 const state = {
   visible: false,
-  isDark: true,
+  isDark: false,
   leftDrawerOpen: false,
   nextLink: null,
   authPanel: "login",

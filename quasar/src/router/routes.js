@@ -46,6 +46,10 @@ const routes = [
         component: () => import("pages/About.vue"),
       },
       {
+        path: "apply",
+        component: () => import("pages/Index2.vue"),
+      },
+      {
         path: "banking",
         component: () => import("pages/Banking/index.vue"),
       },

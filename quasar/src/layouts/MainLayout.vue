@@ -1,7 +1,6 @@
 <template>
   <q-layout
     view="lHh Lpr lFf"
-    :class="$store.getters.isDark ? 'bg-grey-10' : ''"
   >
     <q-ajax-bar ref="bar" position="top" color="info" size="4px" />
     <main-header />

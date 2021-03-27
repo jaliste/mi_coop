@@ -3,9 +3,7 @@
     @hide="hideDrawer"
     @show="showDrawer"
     @input="hideDrawer"
-    v-model="leftDrawerOpen"
-    content-class="bg-grey-5"
-  >
+    v-model="leftDrawerOpen">
     <q-list>
       <q-item-label header>Main Menu</q-item-label>
 

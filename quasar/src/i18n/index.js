@@ -1,7 +1,7 @@
 import enUS from "./en-us";
-import cnCN from "./cn-cn";
+import esCL from "./es-cl";
 
 export default {
   "en-us": enUS,
-  "cn-cn": cnCN,
+  "es-cl": esCL,
 };

@@ -48,6 +48,8 @@ PROJECT_APPS = [
     "apps.core",
     "apps.banking",
     "apps.hn",
+    "apps.delivery",
+    "apps.membership",
 ]
 
 THIRD_PARTY_APPS = [
@@ -264,7 +266,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "es"
 
 TIME_ZONE = "UTC"
 

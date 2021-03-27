@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-12 19:56-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: kale_coop/delivery/models.py:22
+msgid "Delivered"
+msgstr ""
+
+#: kale_coop/delivery/models.py:23
+msgid "Charged"
+msgstr ""
+
+#: kale_coop/delivery/models.py:24
+msgid "Planned"
+msgstr ""
+
+#: kale_coop/delivery/models.py:25
+msgid "Cancelled"
+msgstr ""
+
+#: kale_coop/delivery/models.py:33 kale_coop/delivery/models.py:39
+msgid "Pending"
+msgstr "Pendiente"
+
+#: kale_coop/delivery/models.py:34
+msgid "Approved"
+msgstr "Aprobado"
+
+#: kale_coop/delivery/models.py:35
+msgid "Rejected"
+msgstr "Rechazado"
+
+#: kale_coop/delivery/models.py:36
+msgid "Finalised"
+msgstr ""
+
+#: kale_coop/delivery/models.py:40
+msgid "Active"
+msgstr "Activo"
+
+#: kale_coop/delivery/models.py:41
+msgid "Inactive"
+msgstr "Inactivo"
+
+#: kale_coop/delivery/models.py:43
+msgid "Weekly"
+msgstr "Semanal"
+
+#: kale_coop/delivery/models.py:44
+msgid "Biweekly (odd weeks)"
+msgstr "Quincenal (semanas impares)"
+
+#: kale_coop/delivery/models.py:45
+msgid "Biweekly (even weeks)"
+msgstr "Quincenal (semanas pares)"
+
+#: kale_coop/delivery/models.py:50
+msgid "Odd week"
+msgstr ""
+
+#: kale_coop/delivery/models.py:51
+msgid "Even week"
+msgstr ""
+
+#: kale_coop/delivery/models.py:56
+msgid "title"
+msgstr ""
+
+#: kale_coop/delivery/models.py:58
+msgid "pickup day"
+msgstr "Día de entrega"
+
+#: kale_coop/delivery/models.py:59
+msgid "start time"
+msgstr "Hora comienzo"
+
+#: kale_coop/delivery/models.py:60 kale_coop/delivery/models.py:112
+msgid "duration"
+msgstr "Duración"
+
+#: kale_coop/delivery/models.py:93 kale_coop/delivery/models.py:107
+#: kale_coop/delivery/models.py:158
+msgid "pickup place"
+msgstr "lugar de entrega"
+
+#: kale_coop/delivery/models.py:94
+msgid "pickup places"
+msgstr "lugares de entrega"
+
+#: kale_coop/delivery/models.py:111
+msgid "start date"
+msgstr "Fecha"
+
+#: kale_coop/delivery/models.py:119
+msgid "pickup occurrence"
+msgstr "Entrega"
+
+#: kale_coop/delivery/models.py:120
+msgid "pickup occurrences"
+msgstr "Entregas"
+
+#: kale_coop/delivery/models.py:131 kale_coop/delivery/models.py:166
+msgid "periodicity"
+msgstr "periodicidad"
+
+#: kale_coop/delivery/models.py:132
+#, fuzzy
+#| msgid "periodicity"
+msgid "periodicities"
+msgstr "periodicidad"
+
+#: kale_coop/delivery/models.py:137
+msgid "Unit fee"
+msgstr "cobro por ficha"
+
+#: kale_coop/delivery/models.py:155
+msgid "member"
+msgstr ""
+
+#: kale_coop/delivery/models.py:163
+msgid "Valid from"
+msgstr ""
+
+#: kale_coop/delivery/models.py:164
+msgid "Valid until"
+msgstr ""
+
+#: kale_coop/delivery/models.py:168
+msgid "Admin fee"
+msgstr "adelanto por administración"
+
+#: kale_coop/delivery/models.py:169
+msgid "Advance fee"
+msgstr "adelanto por consumo"
+
+#: kale_coop/delivery/models.py:170
+msgid "Total fee"
+msgstr ""
+
+#: kale_coop/delivery/models.py:175
+#, fuzzy
+#| msgid "basket subscription"
+msgid "subscription"
+msgstr "Subscripción de canastas"
+
+#: kale_coop/delivery/models.py:176
+#, fuzzy
+#| msgid "basket subscriptions"
+msgid "subscriptions"
+msgstr "Subscripciones de canastas"
+
+#: kale_coop/delivery/models.py:181
+msgid "produce"
+msgstr "producto"
+
+#: kale_coop/delivery/models.py:183
+msgid "quantity"
+msgstr "cantidad"
+
+#: kale_coop/delivery/models.py:184
+msgid "fee"
+msgstr ""
+
+#: kale_coop/delivery/models.py:189
+msgid "basket subscription item"
+msgstr "Ficha"
+
+#: kale_coop/delivery/models.py:190
+msgid "basket subscription items"
+msgstr "Contenido de las canastas (Fichas)"
+
+#: kale_coop/delivery/models.py:201
+msgid "Pickup day"
+msgstr "Día de entrega"
+
+#: kale_coop/delivery/models.py:210
+msgid "basket"
+msgstr "canasta"
+
+#: kale_coop/delivery/models.py:211
+msgid "baskets"
+msgstr "canastas"
+
+#: kale_coop/delivery/my_fields.py:6
+msgid "Monday"
+msgstr ""
+
+#: kale_coop/delivery/my_fields.py:7
+msgid "Tuesday"
+msgstr ""
+
+#: kale_coop/delivery/my_fields.py:8
+msgid "Wednesday"
+msgstr ""
+
+#: kale_coop/delivery/my_fields.py:9
+msgid "Thursday"
+msgstr ""
+
+#: kale_coop/delivery/my_fields.py:10
+msgid "Friday"
+msgstr ""
+
+#: kale_coop/delivery/my_fields.py:11
+msgid "Saturday"
+msgstr ""
+
+#: kale_coop/delivery/my_fields.py:12
+msgid "Sunday"
+msgstr ""
+
+#~ msgid "address"
+#~ msgstr "Dirección"

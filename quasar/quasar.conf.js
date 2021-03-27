@@ -5,7 +5,7 @@ module.exports = function (ctx) {
   return {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
-    boot: ["i18n", "axios", "components", "websockets", "apollo"],
+    boot: ["i18n", "axios", "components", "websockets", "apollo","qcalendar"],
     css: ["app.styl"],
     extras: [
       // "ionicons-v4",
