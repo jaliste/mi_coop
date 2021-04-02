@@ -1,0 +1,198 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-12 19:56-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: kale_coop/membership/models.py:10
+msgid "Male"
+msgstr "Hombre"
+
+#: kale_coop/membership/models.py:11
+msgid "Female"
+msgstr "Mujer"
+
+#: kale_coop/membership/models.py:12
+msgid "Other"
+msgstr ""
+
+#: kale_coop/membership/models.py:16
+msgid "Single"
+msgstr "Soltero/a"
+
+#: kale_coop/membership/models.py:17
+msgid "Married"
+msgstr "Casado/a"
+
+#: kale_coop/membership/models.py:18
+msgid "Divorced"
+msgstr "Divorciado/a"
+
+#: kale_coop/membership/models.py:19
+msgid "Widow(ed)"
+msgstr "Viudo/a"
+
+#: kale_coop/membership/models.py:35
+msgid "phone number"
+msgstr ""
+
+#: kale_coop/membership/models.py:37
+msgid "I use Whatsapp"
+msgstr ""
+
+#: kale_coop/membership/models.py:38
+msgid "My whatsapp number is the same as my phone number"
+msgstr ""
+
+#: kale_coop/membership/models.py:40
+msgid "Whatsapp number"
+msgstr ""
+
+#: kale_coop/membership/models.py:41
+msgid "I want to join the Coop Whatsapp group"
+msgstr ""
+
+#: kale_coop/membership/models.py:50
+msgid "candidate"
+msgstr ""
+
+#: kale_coop/membership/models.py:51
+msgid "accepted"
+msgstr ""
+
+#: kale_coop/membership/models.py:52
+msgid "active"
+msgstr ""
+
+#: kale_coop/membership/models.py:54
+msgid "Resigned"
+msgstr ""
+
+#: kale_coop/membership/models.py:55
+msgid "archived"
+msgstr ""
+
+#: kale_coop/membership/models.py:56
+msgid "lapsed"
+msgstr ""
+
+#: kale_coop/membership/models.py:57
+msgid "not a member"
+msgstr ""
+
+#: kale_coop/membership/models.py:62
+#, fuzzy
+#| msgid "membership"
+msgid "Members id"
+msgstr "socio"
+
+#: kale_coop/membership/models.py:71
+msgid "National id"
+msgstr "RUT"
+
+#: kale_coop/membership/models.py:72
+msgid "birth date"
+msgstr "Fecha de nacimiento"
+
+#: kale_coop/membership/models.py:73
+msgid "nationality"
+msgstr "Nacionalidad"
+
+#: kale_coop/membership/models.py:74
+msgid "gender"
+msgstr "Género"
+
+#: kale_coop/membership/models.py:75
+msgid "civil status"
+msgstr "Estado civil"
+
+#: kale_coop/membership/models.py:76
+msgid "occupation"
+msgstr ""
+
+#: kale_coop/membership/models.py:79
+msgid "I authorize the Coop to contact me by email"
+msgstr ""
+
+#: kale_coop/membership/models.py:83
+msgid "Application date"
+msgstr ""
+
+#: kale_coop/membership/models.py:86
+msgid "Affiliation Date"
+msgstr ""
+
+#: kale_coop/membership/models.py:88
+msgid "Disaffiliation Date"
+msgstr ""
+
+#: kale_coop/membership/models.py:91
+msgid "Reasons for Disaffiliation "
+msgstr ""
+
+#: kale_coop/membership/models.py:119
+msgid "membership"
+msgstr "socio"
+
+#: kale_coop/membership/models.py:120
+msgid "memberships"
+msgstr "socios"
+
+#: kale_coop/membership/models.py:123
+msgid "price"
+msgstr ""
+
+#: kale_coop/membership/models.py:127
+msgid "subscribed"
+msgstr ""
+
+#: kale_coop/membership/models.py:128
+msgid "refunded"
+msgstr ""
+
+#: kale_coop/membership/models.py:129
+msgid "payed"
+msgstr ""
+
+#: kale_coop/membership/models.py:132
+msgid "Number of shares"
+msgstr ""
+
+#: kale_coop/membership/models.py:134
+msgid "Subscription date"
+msgstr ""
+
+#: kale_coop/membership/models.py:135
+msgid "Payment date"
+msgstr ""
+
+#: kale_coop/membership/models.py:136
+msgid "Return date"
+msgstr ""
+
+#: kale_coop/membership/models.py:138
+msgid "Amount payed"
+msgstr ""
+
+#: kale_coop/membership/templates/admin/change_list.html:8
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: kale_coop/membership/templates/admin/change_list.html:13
+msgid "Import from SpreadSheet"
+msgstr ""

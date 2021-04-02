@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-08 20:24-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: membership/models.py:6
+msgid "Male"
+msgstr ""
+
+#: membership/models.py:7
+msgid "Female"
+msgstr ""
+
+#: membership/models.py:11
+msgid "Single"
+msgstr ""
+
+#: membership/models.py:12
+msgid "Married"
+msgstr ""
+
+#: membership/models.py:13
+msgid "Divorced"
+msgstr ""
+
+#: membership/models.py:14
+msgid "Widow(ed)"
+msgstr ""
+
+#: membership/models.py:19
+msgid "Members number"
+msgstr ""
+
+#: membership/models.py:29
+msgid "birth date"
+msgstr ""
+
+#: membership/models.py:36
+msgid "Affiliation Date"
+msgstr ""
+
+#: membership/models.py:38
+msgid "Disffiliation Date"
+msgstr ""
+
+#: membership/models.py:41
+msgid "Reasons for Disaffiliation "
+msgstr ""
+
+#: membership/models.py:46
+msgid "Subscribed Share Capital"
+msgstr ""
+
+#: membership/models.py:48
+msgid "Suscribed Share Capital Cert N°"
+msgstr ""
+
+#: membership/models.py:50
+msgid "Subscribed Share Capital Date"
+msgstr ""
+
+#: membership/models.py:51
+msgid "Payed Shared Capital"
+msgstr ""
+
+#: membership/models.py:58
+msgid "membership"
+msgstr ""
+
+#: membership/models.py:59
+msgid "memberships"
+msgstr ""
+
+#: membership/templates/admin/change_list.html:8
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: membership/templates/admin/change_list.html:13
+msgid "Import from SpreadSheet"
+msgstr ""
