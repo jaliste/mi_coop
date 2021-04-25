@@ -50,8 +50,8 @@ services:
       - flower
       - asgiserver
     volumes:
-      - ./nginx/dev/dev.conf:/etc/nginx/nginx.conf:ro
-      - django-static:/usr/src/app/static
+      - ./nginx/dev/dev.conf:/etc/nginx/nginx.conf:z
+      - django-static:/usr/src/app/static:z
     networks:
       - main
 
