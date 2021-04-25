@@ -17,26 +17,25 @@
         icon="settings"
         :done="step > 1"
       >
-	<BlitzForm :schema="schema" v-model="formData"/>
+	      <BlitzForm :schema="schemaPersonalData" v-model="formData"/>
       </q-step>
 
       <q-step
         :name="2"
-        title="Create an ad group"
+        title="Tu Membresía"
         caption="Optional"
         icon="create_new_folder"
         :done="step > 2"
       >
-        An ad group contains one or more ads which target a shared set of keywords.
+        <BlitzForm :schema="schemaMembership" v-model="formData"/>
       </q-step>
 
       <q-step
         :name="3"
-        title="Ad template"
+        title="Arma tu canasta"
         icon="assignment"
-        disable
       >
-        This step won't show up because it is disabled.
+      <BlitzForm :schema="schemaArmaTuCanasta" v-model="formData"/>
       </q-step>
 
       <q-step
@@ -64,19 +63,110 @@
 </template>
 
 <script>
-import { BlitzForm } from "blitzar";
+import { BlitzForm, BlitzListForm } from "blitzar";
 
-const schema = [
-  { id: 'firstName' , label: 'First Name', component: 'input' },
-  { id: 'lastName'  , label: 'Last Name',  component: 'input' },
-  { id: 'nationalId', label: 'RUT',        component: 'input' },
-  { id: 'birthDate' , label: 'Birth Date', component: 'input' },
-  { id: 'civilStatus', label: 'Civil Status', component: 'input' },
-  { id: 'nationality', label: 'Nationality', component: 'input' },
-  { id: 'gender',     label: 'Gender', component: 'input' },
-  { id: 'email',      label: 'Email', component: 'input' },
-  { id: 'email_confirm', label: 'Confirm email', component: 'input' },
+import {QInput, QOptionGroup, QSelect, QBtn} from 'quasar'
+import Vue from 'vue'
 
+Vue.component('QInput', QInput)
+Vue.component('QOptionGroup', QOptionGroup)
+Vue.component('QBtn',QBtn)
+Vue.component('QSelect',QSelect)
+
+const schemaPersonalData = [
+  { id: 'firstName' , label: 'Nombres', component: 'QInput' },
+  { id: 'lastName'  , label: 'Apellidos',  component: 'QInput' },
+  { id: 'email',      label: 'Email', component: 'QInput', type:'email' },
+  { id: 'email_confirm', label: 'Confirma tu email', component: 'QInput', type:'email'},
+  { id: 'nationalId', label: 'RUT',        component: 'QInput' },
+  { id: 'gender',     label: 'Género', component: 'QInput' },
+  { id: 'birthDate' , label: 'Fecha de Nacimiento', component: 'QInput', type:'date' },
+  { 
+    id: 'civilStatus',
+    label: 'Estado Civil',
+    component: 'QOptionGroup',
+    type: 'radio',
+    options: [
+      { label: 'Soltera(o)', value: 'soltero' },
+      { label: 'Casada(o)', value: 'casado' },
+      { label: 'Viudo(o)', value: 'viudo' },
+      { label: 'Otro', value: 'item' },
+    ],
+  },
+  { id: 'nationality', label: 'Nacionalidad', component: 'QInput' },
+  { id: 'occupation', label: 'Ocupación/profesión', component: 'QInput'}
+];
+
+const schemaMembership = [
+
+];
+
+const fichas = [
+  'Paltas',
+]
+
+const schemaArmaTuCanasta = [
+  { 
+    id: 'fichas',
+    label: 'Fichas',
+    subLabel: 'Elige las fichas para complementar tu canasta base' ,
+    component: BlitzListForm,
+    schema: [
+      {
+        component: 'QBtn',
+        slot: '-',
+        events: {
+          click: (e, {deleteRow}) => deleteRow(),
+        },
+        outline: '',
+        rounded: '',
+        evaluatedProps: ['disabled'],
+        disabled: (val, {rowIndex, formData}) => rowIndex === formData.length,
+        componentClasses: 'outline rounded',
+        span: '20px',
+      },
+      { 
+        id: 'cantidad',
+        label: 'Cantidad',
+        component: 'QInput', 
+        parseInput: Number,
+        type: 'number',
+        "input-class": 'text-right',
+      },
+      { 
+        id: 'producto',
+        label: 'Ficha',
+        component: 'QSelect',
+        options: [
+          { 
+            label: 'Paltas',
+            precioPorFicha: 1650,
+            descrip: '',
+          },
+          {
+            label: "Huevos",
+            precioPorFicha: 1100,
+            descrip: '',
+          },
+          {
+            label: "Frutas",
+            precioPorFicha: 1100,
+            descrip: '',
+          } 
+        ]
+      },
+      { 
+        id: 'precio_ficha',
+        label: 'Valor por Ficha', component: 'QInput',
+        readonly:'',
+      },
+      { id: 'total',
+        label: 'Valor',
+        component: 'QInput',
+        readonly: '',
+      }       
+    ],
+  }
 ];
 
 export default {
@@ -84,7 +174,9 @@ export default {
   components: { BlitzForm },
   data () {
     return {
-      schema: schema,
+      schemaPersonalData: schemaPersonalData,
+      schemaMembership: schemaMembership,
+      schemaArmaTuCanasta: schemaArmaTuCanasta,
       step: 1
     }
   }
